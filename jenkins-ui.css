@@ -1,14 +1,27 @@
 body {
-  background: #63818A;
-  background: -moz-linear-gradient(top, #63818A 0%, #73939B 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #63818A), color-stop(100%, #73939B));
-  background: -webkit-linear-gradient(top, #63818A 0%, #73939B 100%);
-  background: -o-linear-gradient(top, #63818A 0%, #73939B 100%);
-  background: -ms-linear-gradient(top, #63818A 0%, #73939B 100%);
-  background: linear-gradient(top, #63818A 0%, #73939B 100%); }
+  background: #262626; }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #4f7b94; }
+a {
+  text-decoration: none !important;
+  color: #cc5200 !important; }
+  a:visited {
+    color: #a6a6a6 !important; }
+  a:hover {
+    color: #ff6600 !important; }
+
+.bd li > a {
+  color: black !important; }
+  .bd li > a:hover {
+    background-color: #eeeeee;
+    color: #ff6600 !important; }
+  .bd li > a.yuimenuitemlabel-selected {
+    background-color: #eeeeee; }
+
+h1, h2 {
+  color: #ff944c; }
+
+h3, h4, h5, h6 {
+  color: #cc5200; }
 
 #top-panel {
   background: none; }
@@ -20,57 +33,42 @@ h1, h2, h3, h4, h5, h6 {
     width: auto; }
   #top-panel td > a {
     background: url("https://upload.wikimedia.org/wikipedia/en/0/05/Aricent_logo.jpg") 0 0 no-repeat;
+	background-color: #262626;
+    background-size: 30px 30px;
     display: block;
-    width: 130px;
-    height: 40px;
-    margin: 10px 0 10px 10px; }
+	width: 30px;
+    height: 30px;
+    margin: 5px 0 5px 5px;
+    padding: 0 0 0 44px;
+	color: #ff944c !important; }
     #top-panel td > a img {
       display: none; }
+    #top-panel td > a:after {
+      content: "jenkins"; }
 
 #projectstatus {
   background: #fff; }
   #projectstatus tr:nth-of-type(odd) {
-    background-color: #e5e5e5; }
-    #projectstatus tr:nth-of-type(odd):hover {
-      background-color: #f0f0f0; }
+    background-color: #0d0d0d; }
+    #projectstatus tr:nth-of-type(odd) :hover {
+      background-color: black; }
   #projectstatus tr:nth-of-type(even) {
-    background-color: #fff; }
-    #projectstatus tr:nth-of-type(even):hover {
-      background-color: #f0f0f0; }
-
-#left-top-nav {
-  border-left: none; }
+    background-color: #404040; }
+    #projectstatus tr:nth-of-type(even) :hover {
+      background-color: black; }
 
 #side-panel {
   background-color: #fff; }
-  #side-panel > div:not(#navigation) {
-    display: none; }
-  #side-panel .task a {
-    display: inline-block;
-    text-decoration: none;
-    width: 10%; }
-    #side-panel .task a + a {
-      width: 83%;
-      padding: 4px; }
-      #side-panel .task a + a:hover {
-        background-color: #e5e5e5; }
-    #side-panel .task a:hover {
-      text-decoration: underline; }
-
+  
 #main-panel {
   background: #fff; }
-  #main-panel > h1 {
-    margin-top: 0; }
-
-#main-table {
-  border-top: 0;
-  border-bottom: 0; }
-
-#description div {
-  font-size: 1.3em; }
 
 #footer {
-  border-top: 1px solid #ccc; }
+  border-top: 1px solid #777777; }
+  #footer a {
+    color: #ff944c !important; }
+    #footer a:hover {
+      color: #ffb27f !important; }
 
 #view-message #description a img {
   padding-right: 4px; }
